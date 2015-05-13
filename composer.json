@@ -12,6 +12,7 @@
     "autoload": {
         "psr-0": {
             "wpToolkit_": "lib/"
-        }
+        },
+        "files": ["lib/functions.php"]
     }
 }
