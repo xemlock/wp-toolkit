@@ -16,9 +16,9 @@ function wptoolkit_nav_menu($options = null) // {{{
         'items_wrap'  => '<ul id="{id}" class="{class}">{items}</ul>',
         'echo'        => false,
     );
+
     $options = wp_parse_args($options, $defaults);
 
-    $options['theme_location'] = (string) $theme_location;
     $options['items_wrap'] = strtr($options['items_wrap'], array(
         '{id}'    => '%1$s', // options[menu_id]
         '{class}' => '%2$s', // options[menu_class]

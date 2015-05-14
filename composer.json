@@ -8,11 +8,13 @@
             "email": "xemlock@gmail.com"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=5.3"
+    },
     "autoload": {
         "psr-0": {
             "wpToolkit_": "lib/"
         },
-        "files": ["lib/functions.php"]
+        "files": ["bootstrap.php"]
     }
 }
