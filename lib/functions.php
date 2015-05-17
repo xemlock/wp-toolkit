@@ -36,7 +36,7 @@ function wptoolkit_nav_menu($options = null) // {{{
         if (!class_exists($class)) {
             throw new InvalidArgumentException(sprintf('Invalid nav walker name: %s', $walker));
         }
-        $options['walker'] = new $class();
+        $walker = new $class();
         $options['fallback_cb'] = 'wpToolkit_Walker_NavMenu_Bootstrap3::fallback';
     }
 
