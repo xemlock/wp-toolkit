@@ -20,6 +20,7 @@ class wpToolkit_Walker_Category extends Walker_Category
                 $show_count = true;
             }
 
+            /** @var string $out */
             parent::start_el($out, $category, $depth, $args, $id);
 
             // remove any trailing <br /> tag, as well as closing </a> tag
